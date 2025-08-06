@@ -56,7 +56,7 @@
                     </div><!-- /.top-message-text-pc -->
                     <br />
                     <div class="center">
-                        <a href="<?php echo get_permalink(get_page_by_path('policy')); ?>" class="c-button c-button--to-policy">主要政策を読む</a>
+                        <a href="<?php echo get_page_link(7); ?>" class="c-button c-button--to-policy">主要政策を読む</a>
                     </div><!-- /.button-to-policy -->
                 </div>
             </div><!-- /.top-message-inner -->
