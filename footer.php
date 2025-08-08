@@ -5,10 +5,10 @@
                     <a href="" class="footer-menu">メールマガジン</a><!-- /.footer-menu -->
                 </li><!-- /.footer-menu-item -->
                 <li class="footer-menu-item">
-                    <a href="<?php echo get_permalink(get_page_by_path('volunteer')); ?>" class="footer-menu">ボランティア募集</a><!-- /.footer-menu -->
+                    <a href="<?php echo get_page_link(23); ?>" class="footer-menu">ボランティア募集</a><!-- /.footer-menu -->
                 </li><!-- /.footer-menu-item -->
                 <li class="footer-menu-item">
-                    <a href="<?php echo get_permalink(get_page_by_path('contribution')); ?>" class="footer-menu">政治献金について</a><!-- /.footer-menu -->
+                    <a href="<?php echo get_page_link(25); ?>" class="footer-menu">政治献金について</a><!-- /.footer-menu -->
                 </li><!-- /.footer-menu-item -->
                 <li class="footer-menu-item">
                     <a href="https://www.google.co.jp/maps/@36.5626,136.362305,5z?hl=ja" class="footer-menu" title="Google Mapsが開きます">事務所へのアクセス</a><!-- /.footer-menu -->

@@ -22,7 +22,7 @@
         <section id="digital-introduction">
             <div class="inner">
                 <div class="image-container">
-                    <img src="./img/IMG-31 (1) 1.jpg" alt="" width="296" height="295">
+                    <img src="<?php echo get_theme_file_uri('img/IMG-31 (1) 1.jpg'); ?>" alt="" width="296" height="295">
                 </div><!-- /.image-container -->
                 <!-- 画像エリア -->
                 <h2 class="policy-heading digital-heading">デジタル導入</h2>
@@ -38,7 +38,7 @@
         <section id="accommodation-tax">
             <div class="inner">
                 <div class="image-container">
-                    <img src="./img/IMG-31 (1) 2.jpg" alt="" width="296" height="295">
+                    <img src="<?php echo get_theme_file_uri('img/IMG-31 (1) 2.jpg'); ?>" alt="" width="296" height="295">
                 </div><!-- /.image-container -->
                 <!-- 画像エリア -->
                 <h2 class="policy-heading tax-heading">宿泊税の新設</h2>
@@ -55,7 +55,7 @@
         <section id="disaster-prevention">
             <div class="inner">
                 <div class="image-container">
-                    <img src="./img/IMG-31 (1) 3.jpg" alt="" width="296" height="295">
+                    <img src="<?php echo get_theme_file_uri('img/IMG-31 (1) 3.jpg'); ?>" alt="" width="296" height="295">
                 </div><!-- /.image-container -->
                 <!-- 画像エリア -->
                 <h2 class="policy-heading dp-heading">津波に備える</h2>
@@ -77,7 +77,7 @@
         <section id="tax-reduction">
             <div class="inner">
                 <div class="image-container">
-                    <img src="./img/IMG-31 (1) 5.jpg" alt="" width="296" height="295">
+                    <img src="<?php echo get_theme_file_uri('img/IMG-31 (1) 5.jpg'); ?>" alt="" width="296" height="295">
                 </div><!-- /.image-container -->
                 <!-- 画像エリア -->
                 <h2 class="policy-heading reduction-heading">市民税の減税</h2>

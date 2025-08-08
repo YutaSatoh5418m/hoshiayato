@@ -16,7 +16,7 @@
                 <div class="swiper-pagination"></div><!-- /.swiper-pagination -->
             </div><!-- /.swiper -->
             <nav class="button-menu">
-                <a href="<?php echo get_page_link(7); ?>" class="c-button c-button-menu">主要政策</a>
+                <a href="<?php echo get_page_link(19); ?>" class="c-button c-button-menu">主要政策</a>
                 <a href="<?php echo get_page_link(12); ?>" class="c-button c-button-menu">活動報告</a>
                 <a href="<?php echo get_page_link(14); ?>" class="c-button c-button-menu">プロフィール</a>
             </nav><!-- /.button-menu -->
@@ -30,7 +30,7 @@
                 <div class="top-message-container-sp">
                     <div class="top-message-content-sp center">
                         <p class="top-message-text-sp">日本の未来を守るため、時代に即した政治改革を進め、みなさんと新しい時代を切り拓きます。</p><!-- /.top-message-text -->
-                        <a href="<?php echo get_page_link(7); ?>" class="c-button c-button--to-policy">主要政策を読む</a>
+                        <a href="<?php echo get_page_link(19); ?>" class="c-button c-button--to-policy">主要政策を読む</a>
                     </div><!-- /.top-message-content-sp -->
                     <div class="top-message-content-sp">
                         <p class="top-message-text-sp2">国政政党の都合に振り回されず、鎌倉ファーストの市政を実現します！</p><!-- /.top-message-text2 -->
@@ -56,7 +56,7 @@
                     </div><!-- /.top-message-text-pc -->
                     <br />
                     <div class="center">
-                        <a href="<?php echo get_page_link(7); ?>" class="c-button c-button--to-policy">主要政策を読む</a>
+                        <a href="" class="c-button c-button--to-policy">主要政策を読む</a>
                     </div><!-- /.button-to-policy -->
                 </div>
             </div><!-- /.top-message-inner -->

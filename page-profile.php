@@ -2,7 +2,7 @@
     <main class="main">
         <div class="profile-inner dark-blue w400">
             <section class="fv">
-                <img src="./img/IMG-26 1.jpg" alt="星あやと" width="386" height="454" />
+                <img src="<?php echo get_theme_file_uri('img/IMG-26 1.jpg'); ?>" alt="星あやと" width="386" height="454" />
             </section><!-- /.fv -->
             <section class="profile-sp">
                 <div class="profile-text">

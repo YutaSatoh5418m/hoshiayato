@@ -27,22 +27,22 @@
                 <div id="modal-1-content">
                     <ul class="menu-list w800">
                         <li class="menu-item">
-                            <a class="menu-link s40 dark-blue" href="<?php echo get_permalink(get_page_by_path('policy')); ?>">主要政策</a><!-- /.menu-link -->
+                            <a class="menu-link s40 dark-blue" href="<?php echo get_page_link(19); ?>">主要政策</a><!-- /.menu-link -->
                         </li><!-- /.menu-item -->
                         <li class="menu-item">
                             <a class="menu-link s40 thought" href="<?php echo get_permalink(get_page_by_path('thought')); ?>">鎌倉市政への想い</a><!-- /.menu-link -->
                         </li><!-- /.menu-item -->
                         <li class="menu-item">
-                            <a class="menu-link s40 dark-blue" href="<?php echo get_permalink(get_page_by_path('activity')); ?>">活動報告</a><!-- /.menu-link -->
+                            <a class="menu-link s40 dark-blue" href="<?php echo get_page_link(12); ?>">活動報告</a><!-- /.menu-link -->
                         </li><!-- /.menu-item -->
                         <li class="menu-item">
-                            <a class="menu-link s40 dark-blue" href="<?php echo get_permalink(get_page_by_path('profile')); ?>">プロフィール</a><!-- /.menu-link -->
+                            <a class="menu-link s40 dark-blue" href="<?php echo get_page_link(14); ?>">プロフィール</a><!-- /.menu-link -->
                         </li><!-- /.menu-item -->
                         <li class="menu-item">
-                            <a class="menu-link s40 dark-blue" href="<?php echo get_permalink(get_page_by_path('contact')); ?>">お問い合わせ</a><!-- /.menu-link -->
+                            <a class="menu-link s40 dark-blue" href="<?php echo get_page_link(21); ?>">お問い合わせ</a><!-- /.menu-link -->
                         </li><!-- /.menu-item -->
                         <li class="menu-item">
-                            <a class="menu-link open-line" href="">
+                            <a class="menu-link open-line" href="line://">
                                 <img src="<?php echo get_theme_file_uri("/img/line-icon.png"); ?>" alt="" width="158" height="170">
                                 <span class="dark-blue s20">LINEで問い合わせる</span>
                             </a><!-- /.menu-link -->
