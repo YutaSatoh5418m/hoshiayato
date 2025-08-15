@@ -18,7 +18,7 @@
             <div class="policy-content">
                 <section id="protect-life">
                     <div class="image-container">
-                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 1.jpg"); ?>" alt="" width="296" height="295">
+                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 1.jpg"); ?>" alt="くらしを守る政策のイメージ" width="296" height="295">
                     </div>
                     <!-- 画像エリア -->
                     <h2 class="policy-heading pl-heading">くらしを守る</h2><!-- /.policy-heading -->
@@ -34,7 +34,7 @@
                 </section><!-- /#protect-life -->
                 <section id="innovation">
                     <div class="image-container">
-                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 2.jpg"); ?>" alt="" width="296" height="295">
+                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 2.jpg"); ?>" alt="令和の政治改革のイメージ" width="296" height="295">
                     </div>
                     <!-- 画像エリア -->
                     <h2 class="policy-heading innovation-heading">令和の政治改革</h2><!-- /.policy-heading -->
@@ -48,7 +48,7 @@
                 </section><!-- /#innovation -->
                 <section id="social-security">
                     <div class="image-container">
-                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 3.jpg"); ?>" alt="" width="296" height="295">
+                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 3.jpg"); ?>" alt="社会保障改革のイメージ" width="296" height="295">
                     </div>
                     <!-- /.image-container -->
                     <!-- 画像エリア -->
@@ -60,7 +60,7 @@
                 </section><!-- /#social-security -->
                 <section id="archivement">
                     <div class="image-container">
-                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 5.jpg"); ?>" alt="" width="296" height="295">
+                        <img src="<?php echo get_theme_file_uri("/img/IMG-31 (1) 5.jpg"); ?>" alt="鎌倉のための実績のイメージ" width="296" height="295">
                     </div>
                     <!-- /.image-container -->
                     <!-- 画像エリア -->

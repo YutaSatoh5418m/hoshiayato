@@ -305,137 +305,183 @@ img {
 =============================================== */
 
 
+/* ===============================================
+# フォーム関連のスタイル
+=============================================== */
 .form-area {
-    display: grid;
-    grid-template-columns: 155px 257px;
-    row-gap: 10px;
-    padding-right: 22px;
-    align-items: center;
-}
-@media screen and (min-width: 769px) {
-    .form-area {
-        padding-left: clamp(287px, 28vw, 404px);
-    }
+    margin-bottom: 2rem;
 }
 
-label {
-    text-align: right;
+.form-area label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--dark-blue);
 }
 
-.optional {
-    margin-right: 2rem;
+.form-area label.required {
+    position: relative;
 }
 
-.textbox {
-    width: 235px;
-    height: 33px;
-    border: 1px solid var(--dark-blue);
-    border-radius: 5px;
-    margin-left: 5px;
+.required-mark {
+    color: var(--vivid-red);
+    margin-left: 0.25rem;
+}
+
+.form-area input[type="text"],
+.form-area input[type="tel"],
+.form-area input[type="email"],
+.form-area textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--grey);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-area input:focus,
+.form-area textarea:focus {
+    outline: none;
+    border-color: var(--light-cyan);
+    box-shadow: 0 0 0 3px rgba(85, 255, 241, 0.1);
+}
+
+.contact-method-fieldset {
+    border: none;
     padding: 0;
-    background-color: var(--white);
-}
-@media screen and (min-width: 769px) {
-    .textbox {
-        width: 443px;
-        height: 31px;
-    }
+    margin: 1rem 0;
 }
 
-.required::after {
-    content: "必須";
-    display: inline-block;
-    color: var(--white);
-    font-size: 8px;
-    margin-left: 5px;
-    background-color: var(--natural-red);
-    border-radius: 50%;
-    padding: 6px 3px;
-    width: 22px;
-    height: 22px;
-    -webkit-text-stroke: thin var(--dark-blue);
-    /* text-shadow:
-    -1px -1px 0 var(--dark-blue),
-     1px -1px 0 var(--dark-blue),
-    -1px  1px 0 var(--dark-blue),
-     1px  1px 0 var(--dark-blue); */
-      /* 黒縁取り */
-}
-
-.preferred {
-    letter-spacing: -0.8px;
-    text-align: start;
+.contact-method-fieldset legend {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: var(--dark-blue);
 }
 
 .radiobox {
     display: flex;
+    gap: 1.5rem;
+}
+
+.radio1,
+.radio2 {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 0.5rem;
 }
 
 .radiobutton {
-    width: 22px;
-    height: 22px;
-}
-@media screen and (min-width: 769px) {
-    .radiobutton {
-        width: 40px;
-        height: 40px;
-    }
-    .radiobutton:hover {
-        background-color: var(--pastel-cyan);
-    }
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--dark-blue);
 }
 
 .radio-label {
-    text-align: start;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.textarea {
+    margin-bottom: 2rem;
+}
+
+.textarea textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
 }
 
 .form-caution {
-    width: 100%;
     color: var(--grey);
-    font-size: 10px;
-    font-weight: 400;
-    padding-top: 5px;
-    padding-bottom: 13px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-textarea {
-    border: 1px solid var(--dark-blue);
-    background-color: var(--white);
-    border-radius: 5px;
-    margin-top: 7px;
+.submit-button {
+    text-align: center;
 }
 
-/* チェックされたラジオボタン内側のスタイル */
-input[type="radio"]::before {
-  background-color: var(--dark-blue);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  content: "";
-  margin: auto;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.c-button__submit {
+    margin-bottom: 1rem;
+    min-width: 200px;
 }
-/* チェックされたらラジオボタン内側を表示 */
-input[type="radio"]:checked::before {
-  opacity: 1;
+
+.caution {
+    font-size: 0.875rem;
+    color: var(--grey);
 }
-/* デフォルトのラジオボタンのスタイル */
-input[type="radio"] {
-  appearance: none; /* デフォルトのスタイルを消す */
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--dark-blue);
-  border-radius: 50%;
-  position: relative;
-  margin: 0;
+
+.caution a {
+    color: var(--dark-blue);
+    text-decoration: underline;
 }
+
+.caution a:hover {
+    color: var(--light-cyan);
+}
+
+/* エラーメッセージとサクセスメッセージ */
+.error-message,
+.success-message {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.error-message {
+    background-color: rgba(217, 71, 71, 0.1);
+    border: 2px solid var(--natural-red);
+    color: var(--natural-red);
+}
+
+.success-message {
+    background-color: rgba(85, 255, 241, 0.1);
+    border: 2px solid var(--light-cyan);
+    color: var(--dark-blue);
+}
+
+/* アクセシビリティの改善 */
+.visuallyHidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* フォーカスインジケーターの改善 */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--light-cyan);
+    outline-offset: 2px;
+}
+
+/* スキップリンク */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
 /* ===============================================
 # header
 =============================================== */

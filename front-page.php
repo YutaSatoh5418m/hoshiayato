@@ -1,16 +1,16 @@
 <?php get_header(); ?>
-    <main class="main">
+    <main class="main" id="main-content">
         <section class="header-slide-menu-section">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" data-image-src="./img/IMG-5.jpg">
-                        <img src="<?php echo get_theme_file_uri("/img/IMG-5.jpg"); ?>" alt="" width="386" height="454" />
+                        <img src="<?php echo get_theme_file_uri("/img/IMG-5.jpg"); ?>" alt="星あやと氏の活動写真1" width="386" height="454" />
                     </div><!-- /.swiper-slide -->
                     <div class="swiper-slide" data-image-src="./img/IMG-37.jpg">
-                        <img src="<?php echo get_theme_file_uri("/img/IMG-37.jpg"); ?>" alt="" width="386" height="454" />
+                        <img src="<?php echo get_theme_file_uri("/img/IMG-37.jpg"); ?>" alt="星あやと氏の活動写真2" width="386" height="454" />
                     </div><!-- /.swiper-slide -->
                     <div class="swiper-slide" data-image-src="./img/IMG-41.jpg">
-                        <img src="<?php echo get_theme_file_uri("/img/IMG-41.jpg"); ?>" alt="" width="386" height="454" />
+                        <img src="<?php echo get_theme_file_uri("/img/IMG-41.jpg"); ?>" alt="星あやと氏の活動写真3" width="386" height="454" />
                     </div><!-- /.swiper-slide -->
                 </div><!-- /.swiper-wrapper -->
                 <div class="swiper-pagination"></div><!-- /.swiper-pagination -->
