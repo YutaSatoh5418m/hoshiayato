@@ -37,7 +37,7 @@
                                 <a class="menu-link s40 dark-blue" href="<?php echo get_page_link(19); ?>">主要政策</a><!-- /.menu-link -->
                             </li><!-- /.menu-item -->
                             <li class="menu-item">
-                                <a class="menu-link s40 thought" href="<?php echo get_permalink(get_page_by_path('thought')); ?>">鎌倉市政への想い</a><!-- /.menu-link -->
+                                <a class="menu-link s40 thought" href="<?php echo get_permalink(get_page_by_title('鎌倉市政への想い')); ?>">鎌倉市政への想い</a><!-- /.menu-link -->
                             </li><!-- /.menu-item -->
                             <li class="menu-item">
                                 <a class="menu-link s40 dark-blue" href="<?php echo get_page_link(12); ?>">活動報告</a><!-- /.menu-link -->

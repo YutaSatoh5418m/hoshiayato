@@ -34,7 +34,7 @@
                     </div><!-- /.top-message-content-sp -->
                     <div class="top-message-content-sp">
                         <p class="top-message-text-sp2">国政政党の都合に振り回されず、鎌倉ファーストの市政を実現します！</p><!-- /.top-message-text2 -->
-                        <a href="<?php echo get_permalink(get_page_by_path('thought')); ?>" class="c-button c-button--red">市政へ想いを読む</a>
+                        <a href="<?php echo get_permalink(get_page_by_title('鎌倉市政への想い')); ?>" class="c-button c-button--red">市政へ想いを読む</a>
                     </div><!-- /.top-message-content -->
                 </div><!-- /.top-message-container-sp -->
             </div><!-- /.inner -->
@@ -56,7 +56,7 @@
                     </div><!-- /.top-message-text-pc -->
                     <br />
                     <div class="center">
-                        <a href="" class="c-button c-button--to-policy">主要政策を読む</a>
+                        <a href="<?php echo get_page_link(19); ?>" class="c-button c-button--to-policy">主要政策を読む</a>
                     </div><!-- /.button-to-policy -->
                 </div>
             </div><!-- /.top-message-inner -->

@@ -137,6 +137,8 @@ add_filter('wp_get_attachment_image_attributes', 'hoshi_ayato_image_optimization
 
 // キャッシュヘッダーの設定
 function hoshi_ayato_cache_headers() {
+    // 一時的に無効化
+    /*
     if (!is_admin()) {
         // 静的ファイルのキャッシュ設定
         if (is_page() || is_single()) {
@@ -145,15 +147,19 @@ function hoshi_ayato_cache_headers() {
             header('Cache-Control: public, max-age=86400'); // 24時間
         }
     }
+    */
 }
 add_action('send_headers', 'hoshi_ayato_cache_headers');
 
 // CSS・JSファイルの最適化
 function hoshi_ayato_optimize_assets() {
     // HTMLの圧縮（開発環境では無効）
-    if (!WP_DEBUG) {
+    // 一時的に無効化
+    /*
+    if (!defined('WP_DEBUG') || !WP_DEBUG) {
         ob_start('hoshi_ayato_minify_html');
     }
+    */
 }
 add_action('init', 'hoshi_ayato_optimize_assets');
 
@@ -201,6 +207,8 @@ add_action('init', 'hoshi_ayato_disable_unnecessary_features');
 
 // データベースの最適化
 function hoshi_ayato_optimize_database() {
+    // 一時的に無効化
+    /*
     global $wpdb;
 
     // リビジョンの自動削除（30日以上古いもの）
@@ -211,17 +219,21 @@ function hoshi_ayato_optimize_database() {
 
     // ゴミ箱の自動空にする（30日以上古いもの）
     $wpdb->query("DELETE FROM $wpdb->posts WHERE post_status = 'trash' AND post_date < DATE_SUB(NOW(), INTERVAL 30 DAY)");
+    */
 }
 add_action('wp_scheduled_delete', 'hoshi_ayato_optimize_database');
 
 // セキュリティヘッダーの追加
 function hoshi_ayato_security_headers() {
+    // 一時的に無効化
+    /*
     if (!is_admin()) {
         header('X-Content-Type-Options: nosniff');
         header('X-Frame-Options: SAMEORIGIN');
         header('X-XSS-Protection: 1; mode=block');
         header('Referrer-Policy: strict-origin-when-cross-origin');
     }
+    */
 }
 add_action('send_headers', 'hoshi_ayato_security_headers');
 

@@ -77,7 +77,7 @@
                 </section><!-- /#archivement -->
             </div><!-- /.policy-content -->
             <div class="archivement-button-area">
-                <a href="<?php echo get_permalink(get_page_by_path('thought')); ?>" class="c-button c-button--red">市政へ想いを読む</a>
+                <a href="<?php echo get_permalink(get_page_by_title('鎌倉市政への想い')); ?>" class="c-button c-button--red">市政へ想いを読む</a>
             </div><!-- /.archivement-button-area -->
         </div><!-- /.inner -->
     </main><!-- /.main -->

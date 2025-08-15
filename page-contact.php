@@ -8,7 +8,7 @@
 
             <?php
             // フォーム送信処理
-            if ($_POST['submit_contact']) {
+            if (isset($_POST['submit_contact']) && $_POST['submit_contact']) {
                 // nonce検証
                 if (!wp_verify_nonce($_POST['contact_nonce'], 'contact_form')) {
                     $error_message = 'セキュリティエラーが発生しました。ページを再読み込みしてください。';
@@ -104,7 +104,7 @@
                 <div class="submit-button">
                     <button type="submit" name="submit_contact" class="c-button c-button__submit">送信する</button>
                     <p class="caution">
-                        <a href="<?php echo get_page_link(get_page_by_path('privacy-policy')->ID); ?>" target="_blank">「プライバシーポリシー」</a>の内容に同意して送信する。
+                        <a href="<?php echo get_permalink(get_page_by_title('プライバシーポリシー')); ?>" target="_blank">「プライバシーポリシー」</a>の内容に同意して送信する。
                     </p>
                 </div>
             </form>
